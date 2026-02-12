@@ -1,20 +1,14 @@
 body {
     background-color: #000;
-    color: #ffffff;
+    color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero {
-    background-color: #000;
+    background-color: none;
     text-align: center;
     height: 70vh;
     padding-top: 15rem;
     background: url(../img/deutschgenie\ mockup.png) no-repeat center center;
     background-size: cover;
-    ::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.45);
-    }
 }
