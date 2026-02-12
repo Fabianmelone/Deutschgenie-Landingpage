@@ -8,7 +8,25 @@ body {
     background-color: none;
     text-align: center;
     height: 70vh;
+    padding: 0 5rem;
     padding-top: 15rem;
     background: url(../img/deutschgenie\ mockup.png) no-repeat center center;
     background-size: cover;
+    .hero--content {
+    /* From https://css.glass */
+      background: rgba(0, 0, 0, 0.32);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1.8px);
+        -webkit-backdrop-filter: blur(1.8px);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        .hero--cta {
+            border: none;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 1rem;
+
+        }
+    }
 }
