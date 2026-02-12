@@ -12,10 +12,10 @@ h1 {
 .hero {
     background-color: none;
     text-align: center;
-    height: 90vh;
+    height: 60vh;
     padding-top: 20rem;
     background: url(../img/deutschgenie\ mockup.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     .hero--content {
     /* From https://css.glass */
         background: rgba(255, 255, 255, 0.62);
@@ -40,6 +40,10 @@ h1 {
             color: #fff;
             font-weight: bold;
             cursor: pointer;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
         }
     }
 }
