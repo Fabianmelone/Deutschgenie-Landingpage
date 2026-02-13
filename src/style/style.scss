@@ -131,6 +131,7 @@ section {
     .level-intro {
         max-width: 75ch;
         margin: 0 auto;
+        margin-bottom: 2rem;
     }
     .levels {
         ul {
@@ -162,4 +163,121 @@ section {
             }
         }
     }
+}
+
+
+
+.reviews{ max-width: 1000px; }
+
+.review-header {
+    max-width: 75ch;
+    margin: 0 auto;
+}
+/* container */
+.slideshow-container{
+  max-width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  /* reserve space so centered cards don't sit under arrows */
+  padding-inline: 4rem;
+}
+
+/* each slide becomes a centering flex container */
+.mySlides{
+  display: none;     /* JS sets the active one to display:flex */
+  height: 100%;
+  padding: 1rem;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.numbertext{
+  position: static;     /* overrides any earlier position:absolute */
+  padding: 0;
+  font-size: 0.9rem;
+  color: #fff;
+
+  /* choose one: */
+  align-self: center;   /* centered under the section heading */
+  /* align-self: flex-start; */  /* if you prefer it left-aligned */
+}
+
+/* default review card: centered + 75% width */
+.mySlides .text{
+  width: 75%;
+  max-width: 60ch;   /* keeps it from getting too wide */
+  margin: 0 auto;
+
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+
+  /* IMPORTANT: no offsets for normal slides */
+  position: static;
+}
+
+/* arrows */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.prev{ left: 0; }
+.next{ right: 0; }
+
+/* long slide override (add class="mySlides fade is-long" in HTML) */
+.mySlides.is-long{
+  justify-content: flex-start; /* keep it higher */
+  align-items: center;         /* center horizontally */
+}
+
+.mySlides.is-long .text{
+  position: relative;
+  top: 2rem;
+  left: 0;          /* remove the push */
+  margin: 0 auto;   /* ensure centering */
+  width: 50%;
+}
+
+
+/* dots */
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 3rem 2px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+
+/* fade */
+.fade{
+  animation: fade 1.5s;
+}
+
+@keyframes fade{
+  from { opacity: .4; }
+  to   { opacity: 1; }
 }
