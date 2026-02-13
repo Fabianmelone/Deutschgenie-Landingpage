@@ -143,6 +143,22 @@ section {
                 border-radius: 10px;
                 background-color: #fff;
                 color: #000;
+                &.a2 {
+                    background-color: #FFED68;
+                }
+                &.b1 {
+                    background-color: #9CFE9F;
+                }
+                &.b2 {
+                    background-color: #8394FF;
+                }
+                &.c1 {
+                    background-color: #C983FF;
+                    
+                }
+                &.c2 {
+                    background-color: #C96C6C;
+                }
             }
         }
     }
