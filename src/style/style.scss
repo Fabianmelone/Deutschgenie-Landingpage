@@ -8,6 +8,20 @@ h1 {
     hyphens: auto;
 }
 
+header {
+    .app-download {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        margin: 2rem;
+        text-decoration: none;
+        background-color: #fff;
+        padding: 1rem;
+        color:#000;
+        border-radius: 10px;
+    }
+}
+
 section {
     margin: 0 auto;
     max-width: 75ch;
@@ -109,4 +123,27 @@ section {
         }
     }
     margin-bottom: 5rem;
+}
+
+.level-info {
+    max-width: 900px;
+    margin-bottom: 5rem;
+    .level-intro {
+        max-width: 75ch;
+        margin: 0 auto;
+    }
+    .levels {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                list-style-type: none;
+                padding: 1rem;
+                border-radius: 10px;
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
 }
