@@ -62,9 +62,40 @@ section {
     }
 }
 
+.how-to-learn {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1rem;
+    color: #000;
+    margin-bottom: 5rem;
+}
 
 .learning-concept {
+    max-width: 900px;
     .concept-intro {
-
+        max-width: 75ch;
+        margin: 0 auto;
+    }
+    .concept-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 2rem;
+        .concept-card {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 10px;
+            width: 250px;
+            padding: 1rem;
+            ul {
+                padding-left: 1rem;
+            }
+            &.concept-color {
+                background-color: rgb(174, 38, 38);
+            }
+        }
     }
 }
