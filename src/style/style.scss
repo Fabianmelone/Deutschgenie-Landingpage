@@ -150,38 +150,60 @@ section {
         margin: 0 auto;
     }
     .concept-info {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
         margin-top: 2rem;
-        flex-wrap: wrap;
-        .concept-card {
+        .concept-content {
             display: flex;
-            flex-direction: column;
-            height: 300px;
-            background: url(../img/colors.svg) no-repeat top 10px right 10px;
-            background-size: 48px;
-            background-color: #fff;
-            color: #000;
-            border-radius: 10px;
-            width: 250px;
-            padding: 1rem;
-            margin: 1rem;
-            ul {
-                padding-left: 1rem;
+            img {
+                height: auto;
+                width: 50%;
+                object-fit: cover;
+            }
+              
+            .concept-card {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                background: url(../img/colors.svg) no-repeat top 10px right 10px;
+                background-size: 48px;
+                background-color: #fff;
+                color: #000;
+                border-radius: 10px;
+                width: 60%;
+                padding: 2rem;
+                margin: 2rem auto;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                h3 {
+                    font-size: 1.5rem;
+                }
+            
+                ul {
+                    padding-left: 1rem;
+                }
+                &:hover {
+                    transform: rotate3d(0, 1, 0, 15deg);
+                }
             }
             &.concept-color {
-                background-color: #8394FF;
+                .concept-card {
+                    background-color: #8394FF;
+                }
             }
-            &.concept-icon {
-                background-image: url(../img/smiley.svg);
-                background-color: #9CFE9F;
+            &.concept-icon { 
+                flex-direction: row-reverse; 
+                .concept-card {
+                    background-image: url(../img/smiley.svg);
+                    background-color: #9CFE9F;
+                }
             }
-            &.concept-feedback {
-                background-image: url(../img/ai.svg);
-                background-color: #C983FF;
+            &.concept-feedback {  
+                .concept-card {
+                    background-image: url(../img/ai.svg);
+                    background-color: #C983FF;
+                }
             }
         }
+       
     }
     margin-bottom: 5rem;
 }
