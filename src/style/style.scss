@@ -48,6 +48,9 @@ section {
     @media (max-width: 768px) {
         padding-top: 10rem;
     }
+    @media (max-width: 500px) {
+        background-size: cover;
+    }
     .hero--content {
     /* From https://css.glass */
         background: rgba(255, 255, 255, 0.62);
@@ -61,44 +64,6 @@ section {
         margin: 0 auto;
         margin-bottom: 15rem;
         padding-bottom: 2rem;
-        @media (min-height: 930px) {
-            margin-bottom: 20rem;
-        }
-        @media (min-width: 1400px) {
-            @media (max-height: 870px) {
-                margin-bottom: 12rem;
-            }
-            @media (max-height: 870px) {
-                margin-bottom: 8rem;
-            }
-        }
-        @media (min-width: 2000px) {
-            @media (max-height: 1200px) {
-                margin-bottom: 25rem;
-            }
-            @media (min-height: 1200px) {
-                margin-bottom: 35rem;
-            }
-             @media (min-height: 1500px) {
-                margin-bottom: 40rem;
-            }
-             @media (min-height: 1600px) {
-                margin-bottom: 45rem;
-            }
-        }
-        @media (max-width: 1024px) {
-            margin: 2rem;
-            margin-bottom: 20rem;
-            @media (max-height: 1100px) {
-                margin-bottom: 15rem;
-            }
-        }
-        @media (max-width: 768px) {
-            margin-bottom: 12rem;
-        }
-        @media (max-width: 436px) {
-            margin-bottom: 8rem;
-        }
         h1 {
             color:#000;
             font-size: 3rem;
@@ -127,11 +92,28 @@ section {
         }
     }
     .scroll-link {
+        position: absolute;
+        bottom: 4%;
+        right: 47%;
         color: #fff;
         text-decoration: none;
         font-size: 1.25rem;
         background: url(../img/arrow-down.svg) no-repeat bottom center;
         padding-bottom: 2rem;
+        @media (min-height: 1000px) {
+            bottom: 12%;
+        }
+        @media (max-width: 768px) {
+            @media (min-height: 400px) {
+                bottom: 18%;
+            }
+        }
+        @media (max-width: 700px) {
+            right: 40%;
+            @media (min-height: 400px) {
+                bottom: 15%;
+            }
+        }
     }
 }
 
@@ -153,10 +135,16 @@ section {
         margin-top: 2rem;
         .concept-content {
             display: flex;
+            @media (max-width: 500px) {
+                flex-wrap: wrap;
+            }
             img {
                 height: auto;
                 width: 50%;
                 object-fit: cover;
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
             }
               
             .concept-card {
@@ -191,6 +179,9 @@ section {
             }
             &.concept-icon { 
                 flex-direction: row-reverse; 
+                @media (max-width: 500px) {
+                    flex-direction: row;
+                }
                 .concept-card {
                     background-image: url(../img/smiley.svg);
                     background-color: #9CFE9F;
