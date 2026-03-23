@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabianmelone.github.io/Deutschgenie-Landingpage/sitemap.xml
