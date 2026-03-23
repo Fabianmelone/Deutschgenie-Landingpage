@@ -310,6 +310,8 @@ section {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+  background:none;
+  border: none;
 
   padding: 16px;
   color: #fff;
@@ -345,6 +347,8 @@ section {
   height: 15px;
   width: 15px;
   margin: 3rem 2px 0;
+  background: none;
+  border: none;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
