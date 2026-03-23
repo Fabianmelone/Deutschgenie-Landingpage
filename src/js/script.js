@@ -21,13 +21,19 @@ function showSlides(n) {
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].setAttribute("aria-hidden", i === (slideIndex - 1) ? "false" : "true");
   }
 
   for (i = 0; i < dots.length; i++) {
     const isActive = i === (slideIndex -1);
-    dots[i].setAttribute("aria-selected", isActive ? "true": "false");
+    dots[i].className = dots[i].className.replace(" active", "");
 
-    dots[i].classList.toggle("active", isActive);
+    if (isActive) {
+      dots[i].className += " active";
+      dots[i].setAttribute("aria-current", "true");
+    } else {
+      dots[i].removeAttribute("aria-current");
+    }
   }
 
   slides[slideIndex-1].style.display = "flex";
